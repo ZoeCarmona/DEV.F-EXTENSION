@@ -1,0 +1,24 @@
+<!-- Practice 1 -->
+<!-- 1. Cambiar el texto de un párrafo oculto.
+2. Mostrar solo el contenido visible de un contenedor.
+3. Reemplazar una etiqueta <div> con un mensaje personalizado. -->
+
+<div class="container">
+    <p class="hidden" style="display: none;">Texto oculto</p>
+    <p class="replace">Reemplázame</p>
+</div>
+
+<script>
+    // 1
+    const hiddenElement = document.querySelector(".hidden");
+    hiddenElement.textContent = "Texto revelado";
+
+    // 2
+    const container = document.querySelector(".container");
+    console.log(container.innerText);
+
+    // 3
+    // const replaceElement = document.querySelector(".replace");
+    // replaceElement.outerText = "Etiqueta reemplazada";
+    container.outerText = "Mensaje personalizado: el div fue reemplazado.";
+</script>
