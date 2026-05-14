@@ -1,3 +1,4 @@
+<!-- https://zoecarmona.github.io/DEV.F-EXTENSION/class07/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,75 @@
     <link rel="shortcut icon" href="img/passIcon.png" type="image/x-icon">
 </head>
 <body>
-    
+    <main class="app">
+        <h1>Password Generator</h1>
+
+        <section class="password-box">
+        <p id="passwordOutput">PTx1f5DaFX</p>
+        <button id="copyBtn" class="copy-btn" aria-label="Copy password">
+            ⧉
+        </button>
+        </section>
+
+        <section class="generator-card">
+        <div class="length-header">
+            <span>Character Length</span>
+            <strong id="lengthValue">10</strong>
+        </div>
+
+        <input 
+            type="range" 
+            id="lengthSlider" 
+            min="8" 
+            max="20" 
+            value="10"
+        />
+
+        <div class="options">
+            <label>
+            <input type="checkbox" id="uppercase" checked />
+            Include Uppercase Letters
+            </label>
+
+            <label>
+            <input type="checkbox" id="lowercase" checked />
+            Include Lowercase Letters
+            </label>
+
+            <label>
+            <input type="checkbox" id="numbers" checked />
+            Include Numbers
+            </label>
+
+            <label>
+            <input type="checkbox" id="symbols" />
+            Include Symbols
+            </label>
+        </div>
+
+        <div class="strength-box">
+            <span>STRENGTH</span>
+
+            <div class="strength-result">
+            <strong id="strengthText">MEDIUM</strong>
+
+            <div class="bars">
+                <span class="bar active"></span>
+                <span class="bar active"></span>
+                <span class="bar active"></span>
+                <span class="bar"></span>
+            </div>
+            </div>
+        </div>
+
+        <p id="message" class="message"></p>
+
+        <button id="generateBtn" class="generate-btn">
+            GENERATE <span>➜</span>
+        </button>
+        </section>
+    </main>
+
     <script src="./script.js"></script>
 </body>
 </html>
