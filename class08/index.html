@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Libros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <header class="hero-biblioteca">
+      <div class="capa-oscura">
+        <h1>Seguimiento de Libros</h1>
+        <p>
+          Guarda tus comentarios, ideas y reflexiones sobre cada lectura
+          como si fuera tu diario de biblioteca.
+        </p>
+      </div>
+    </header>
+
+    <section class="panel">
+      <form id="formularioComentario" class="formulario">
+        <label for="comentario">Escribe tu comentario:</label>
+
+        <textarea 
+          id="comentario" 
+          placeholder="Escribe tu opinión honesta!"
+          required
+        ></textarea>
+
+        <button type="submit">Agregar comentario</button>
+      </form>
+    </section>
+
+    <section class="comentarios panel">
+      <h2>Comentarios publicados</h2>
+      <div id="listaComentarios"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
