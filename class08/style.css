@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:
+    linear-gradient(rgba(63, 43, 28, 0.35), rgba(63, 43, 28, 0.35)),
+    url("img/fondo-biblioteca.jpg") center/cover no-repeat fixed;
+  color: #2f241d;
+  min-height: 100vh;
+  padding: 30px 15px;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-biblioteca {
+  background:
+    linear-gradient(rgba(38, 24, 16, 0.55), rgba(38, 24, 16, 0.55)),
+    url("img/libros.jpg") center/cover no-repeat;
+  min-height: 260px;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.capa-oscura {
+  width: 100%;
+  padding: 40px;
+  color: #f7f0e8;
+  text-align: center;
+}
+
+.hero-biblioteca h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.2rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.hero-biblioteca p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #f3e5d6;
+}
+
+.panel {
+  background: rgba(247, 240, 232, 0.96);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(50, 33, 21, 0.18);
+  border: 1px solid rgba(124, 91, 61, 0.18);
+  margin-bottom: 22px;
+  backdrop-filter: blur(2px);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formulario label {
+  font-weight: 600;
+  color: #5a3d2b;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #cfb79e;
+  background: #fffaf5;
+  font-size: 15px;
+  color: #3d2a1d;
+  resize: vertical;
+  outline: none;
+  transition: all 0.25s ease;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+textarea:focus {
+  border-color: #8a5a32;
+  box-shadow: 0 0 0 4px rgba(138, 90, 50, 0.12);
+}
+
+button {
+  align-self: flex-start;
+  border: none;
+  background: linear-gradient(135deg, #7b4b2a, #a66a3f);
+  color: #fffaf5;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.3s ease;
+  box-shadow: 0 6px 16px rgba(122, 75, 42, 0.28);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(122, 75, 42, 0.35);
+}
+
+.comentarios h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #4e3525;
+  margin-bottom: 18px;
+  border-bottom: 2px solid rgba(124, 91, 61, 0.2);
+  padding-bottom: 8px;
+}
+
+#listaComentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comentario {
+  background: linear-gradient(180deg, #fffaf4 0%, #f6ede3 100%);
+  border-left: 7px solid #8a5a32;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 14px rgba(59, 39, 25, 0.10);
+  position: relative;
+}
+
+.comentario::before {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 1.2rem;
+  opacity: 0.75;
+}
+
+.texto-comentario {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: #3b2c21;
+  padding-right: 28px;
+}
+
+.fecha {
+  font-size: 13px;
+  color: #7a6354;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.btn-eliminar {
+  background: linear-gradient(135deg, #8f2f2f, #b34848);
+  padding: 9px 16px;
+  font-size: 13px;
+  box-shadow: 0 5px 12px rgba(143, 47, 47, 0.22);
+}
+
+.btn-eliminar:hover {
+  box-shadow: 0 8px 16px rgba(143, 47, 47, 0.28);
+}
+
+@media (max-width: 768px) {
+  .hero-biblioteca {
+    min-height: 220px;
+  }
+
+  .hero-biblioteca h1 {
+    font-size: 2.4rem;
+  }
+
+  .capa-oscura {
+    padding: 28px 22px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
