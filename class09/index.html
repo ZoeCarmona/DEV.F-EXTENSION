@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planificador de Viajes ES6</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Proyecto ECMAScript</p>
+        <h1>Planificador de viajes</h1>
+        <p>Registra destinos, selecciona transporte y alojamiento, calcula descuentos y consulta tu itinerario.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <form id="formViaje" class="formulario">
+        <h2>Registrar viaje</h2>
+
+        <label for="destino">Destino</label>
+        <select id="destino" required>
+          <option value="">Selecciona un destino</option>
+          <option value="Paris">París</option>
+          <option value="Londres">Londres</option>
+          <option value="New York">New York</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Cancún">Cancún</option>
+        </select>
+
+        <label for="fecha">Fecha de viaje</label>
+        <input type="date" id="fecha" required />
+
+        <label for="transporte">Transporte</label>
+        <select id="transporte" required>
+          <option value="">Selecciona transporte</option>
+          <option value="Avión">Avión</option>
+          <option value="Tren">Tren</option>
+          <option value="Autobús">Autobús</option>
+          <option value="Barco">Barco</option>
+        </select>
+
+        <label for="alojamiento">Alojamiento</label>
+        <select id="alojamiento" required>
+          <option value="">Selecciona alojamiento</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Hostal">Hostal</option>
+          <option value="Departamento">Departamento</option>
+          <option value="Resort">Resort</option>
+        </select>
+
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" min="1" value="1" required />
+
+        <button type="submit">Agregar al itinerario</button>
+      </form>
+
+      <section class="itinerario">
+        <div class="itinerario-header">
+          <h2>Itinerario</h2>
+          <p id="resumen">No hay viajes registrados todavía.</p>
+        </div>
+        <div id="listaViajes" class="lista-viajes"></div>
+      </section>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
