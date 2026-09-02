@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+.app-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}

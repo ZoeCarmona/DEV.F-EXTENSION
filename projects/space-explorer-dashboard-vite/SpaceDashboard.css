@@ -1,0 +1,157 @@
+.dashboard-container {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 550px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+  border: 1px solid #334155;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #38bdf8;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge.active {
+  background: #065f46;
+  color: #34d399;
+}
+
+.badge.inactive {
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #334155;
+}
+
+.metric-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.metric-card p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f8fafc;
+}
+
+.metric-card p.danger {
+  color: #f87171;
+}
+
+.control-panel {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-start {
+  background-color: #0284c7;
+  color: white;
+}
+
+.btn-start:hover:not(:disabled) {
+  background-color: #0369a1;
+}
+
+.btn-stop {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-stop:hover {
+  background-color: #b91c1c;
+}
+
+.btn-refuel {
+  background-color: #059669;
+  color: white;
+}
+
+.btn-refuel:hover {
+  background-color: #047857;
+}
+
+.memo-stats {
+  background: #1e293b;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+}
+
+.planets-section h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #38bdf8;
+}
+
+.planets-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.planet-item {
+  background: #1e293b;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  border: 1px solid #334155;
+}
