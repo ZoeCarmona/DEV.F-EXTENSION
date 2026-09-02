@@ -1,0 +1,141 @@
+.timer-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.clock-banner {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.clock-banner h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1f2937;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.timer-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timer-input {
+  flex: 2;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.timer-input-small {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.timer-input:focus, .timer-input-small:focus {
+  border-color: #6366f1;
+}
+
+.timer-btn {
+  padding: 0.75rem 1rem;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.timer-btn:hover {
+  background-color: #4f46e5;
+}
+
+.timer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.timer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.task-name {
+  font-weight: 500;
+  color: #374151;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task-hours {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.timer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+  color: #374151;
+}
+
+.total-badge {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
