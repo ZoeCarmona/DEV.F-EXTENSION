@@ -1,0 +1,12 @@
+{
+  "name": "space-explorer-planets",
+  "version": "1.0.0",
+  "description": "Aplicación de consola en Node.js para registrar y mostrar planetas favoritos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["nodejs", "npm", "taller", "explorador"],
+  "author": "Estudiante Dev.F",
+  "license": "ISC"
+}
