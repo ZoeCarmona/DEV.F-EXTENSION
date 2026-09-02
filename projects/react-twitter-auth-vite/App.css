@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* --- Navbar --- */
+.twitter-navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1d9bf0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #1d9bf0;
+}
+
+.logout-btn {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #fecaca;
+}
+
+.login-link-btn {
+  background-color: #1d9bf0;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* --- Login Page --- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-top: 0;
+  color: #1d9bf0;
+}
+
+.login-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #1d9bf0;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login-btn:hover {
+  background-color: #1a8cd8;
+}
+
+/* --- Feed Page --- */
+.feed-container {
+  width: 100%;
+  max-width: 550px;
+}
+
+.tweet-box {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.tweet-box h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.tweet-box textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.tweet-box textarea:focus {
+  border-color: #1d9bf0;
+}
+
+.tweet-box-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.char-counter {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.tweet-btn {
+  background-color: #1d9bf0;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tweet-btn:hover {
+  background-color: #1a8cd8;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tweet-card {
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.tweet-author {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.tweet-time {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.tweet-content {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  word-break: break-word;
+}
+
+.delete-tweet-btn {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-tweet-btn:hover {
+  text-decoration: underline;
+}
+
+.empty-feed {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+/* --- Profile Page --- */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-card {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.profile-avatar {
+  font-size: 3rem;
+  background: #e0f2fe;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+}
+
+.profile-card h2 {
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.profile-meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-stats {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.status-badge {
+  color: #059669;
+  font-weight: 600;
+}
